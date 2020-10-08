@@ -9,9 +9,11 @@
 import UIKit
 import RxSwift
 import ImageSlideshow
+import IBAnimatable
 
 class HomeViewController: UIViewController {
-    
+    private var  itemsCount = 0
+    @IBOutlet weak var itemsCountLabel: AnimatableLabel!
     @IBOutlet weak var tableViewTopSpaceConstrains: NSLayoutConstraint!
     @IBOutlet weak var itemsTablView: UITableView!
     private var items: [HomeScreenData] = []
@@ -99,7 +101,18 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             return cell}
     }
     private func addItemToCart(item:HomeScreenData ) {
-        
+        itemsCount += 1
+        itemsCountLabel.text = "\(itemsCount)"
+             UIView.animate(withDuration: 0.4, animations: {
+                self.itemsCountLabel.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+           }, completion: { finished in
+               DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                   UIView.animate(withDuration: 0.4, animations: {
+              self.itemsCountLabel.transform = CGAffineTransform.init(scaleX: 1, y: 1)
+                              })
+               })
+           })
+        itemsCountLabel.animate(AnimationType.scale(fromX: 1, fromY: 1, toX: 1.2, toY: 1.2))
     }
     
 }

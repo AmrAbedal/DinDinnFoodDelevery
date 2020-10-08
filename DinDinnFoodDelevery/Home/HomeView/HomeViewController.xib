@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DinDinnFoodDelevery" customModuleProvider="target">
             <connections>
+                <outlet property="itemsCountLabel" destination="Avd-Re-l0a" id="Jag-KN-P0y"/>
                 <outlet property="itemsTablView" destination="JhG-H5-RNo" id="ep2-sm-hMH"/>
                 <outlet property="tableViewTopSpaceConstrains" destination="1ml-gR-rpq" id="TA2-Lx-nJH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

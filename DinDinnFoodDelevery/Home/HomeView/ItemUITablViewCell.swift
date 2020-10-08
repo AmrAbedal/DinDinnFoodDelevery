@@ -14,7 +14,6 @@ static let identifier = "ItemUITablViewCell"
     @IBAction func addToCartButtonTap(_ sender: UIButton) {
         action?()
         UIView.animate(withDuration: 0.4, animations: {
-            self.itemPriceLabel.isSelected = true
             sender.backgroundColor = #colorLiteral(red: 0.4901960784, green: 0.7607843137, blue: 0.2941176471, alpha: 1)
             sender.isSelected = true
         }, completion: { finished in
@@ -36,6 +35,8 @@ static let identifier = "ItemUITablViewCell"
     }
     func configure(item: HomeScreenData,action: @escaping ()->() ) {
         self.action = action
+        itemNameLabel.text = item.name
+        itemDiscriptionLabel.text = item.name
         itemImageView.image = UIImage.init(named: item.Image)
         itemPriceLabel.setTitle("\(item.price) USD", for: .normal)
     }

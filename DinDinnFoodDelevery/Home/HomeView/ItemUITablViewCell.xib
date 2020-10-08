@@ -17,71 +17,90 @@
                 <rect key="frame" x="0.0" y="0.0" width="356" height="338"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-L1-YkH">
-                        <rect key="frame" x="20" y="0.0" width="316" height="200"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-a2-Oa1" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="20" y="20" width="326" height="308"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-L1-YkH">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rKB-bl-RYD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkk-d5-jsx">
+                                <rect key="frame" x="20" y="248" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Map-ME-xN1">
+                                <rect key="frame" x="20" y="219" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3II-9d-axO" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="156" y="238" width="150" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4kr-dQ-HON"/>
+                                    <constraint firstAttribute="height" constant="50" id="aIw-Ls-gcy"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="+1 Added"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addToCartButtonTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TmD-Bf-lgO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="200" id="rKB-bl-RYD"/>
+                            <constraint firstAttribute="trailing" secondItem="qkk-d5-jsx" secondAttribute="trailing" constant="253" id="D4H-vj-awB"/>
+                            <constraint firstItem="Z2S-L1-YkH" firstAttribute="top" secondItem="UVc-a2-Oa1" secondAttribute="top" id="FUJ-x0-dxT"/>
+                            <constraint firstAttribute="bottom" secondItem="3II-9d-axO" secondAttribute="bottom" constant="20" id="GMQ-TW-Kqp"/>
+                            <constraint firstAttribute="bottom" secondItem="qkk-d5-jsx" secondAttribute="bottom" constant="20" id="Ihb-2s-2cl"/>
+                            <constraint firstAttribute="trailing" secondItem="Map-ME-xN1" secondAttribute="trailing" constant="253" id="ItV-OX-M6L"/>
+                            <constraint firstItem="qkk-d5-jsx" firstAttribute="leading" secondItem="UVc-a2-Oa1" secondAttribute="leading" constant="20" id="QfG-Kh-vti"/>
+                            <constraint firstItem="Map-ME-xN1" firstAttribute="top" secondItem="Z2S-L1-YkH" secondAttribute="bottom" constant="19" id="SgJ-Nd-cmZ"/>
+                            <constraint firstItem="qkk-d5-jsx" firstAttribute="top" secondItem="Map-ME-xN1" secondAttribute="bottom" constant="8" id="TT8-Q3-jHd"/>
+                            <constraint firstItem="Z2S-L1-YkH" firstAttribute="leading" secondItem="UVc-a2-Oa1" secondAttribute="leading" id="Zd7-62-frz"/>
+                            <constraint firstAttribute="trailing" secondItem="3II-9d-axO" secondAttribute="trailing" constant="20" id="pQI-1q-ykv"/>
+                            <constraint firstAttribute="trailing" secondItem="Z2S-L1-YkH" secondAttribute="trailing" id="pbX-g3-uRJ"/>
+                            <constraint firstItem="Map-ME-xN1" firstAttribute="leading" secondItem="UVc-a2-Oa1" secondAttribute="leading" constant="20" id="yjh-Av-03p"/>
                         </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkk-d5-jsx">
-                        <rect key="frame" x="20" y="248" width="83" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBs-4i-Qlo">
-                        <rect key="frame" x="20" y="277" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Map-ME-xN1">
-                        <rect key="frame" x="20" y="219" width="83" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3II-9d-axO" customClass="AnimatableButton" customModule="IBAnimatable">
-                        <rect key="frame" x="186" y="268" width="150" height="50"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="150" id="4kr-dQ-HON"/>
-                            <constraint firstAttribute="height" constant="50" id="aIw-Ls-gcy"/>
-                        </constraints>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                        <state key="selected" title="+1 Added"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="25"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
-                        <connections>
-                            <action selector="addToCartButtonTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TmD-Bf-lgO"/>
-                        </connections>
-                    </button>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qBs-4i-Qlo" firstAttribute="top" secondItem="qkk-d5-jsx" secondAttribute="bottom" constant="8" id="3jP-LS-CNa"/>
-                    <constraint firstItem="Map-ME-xN1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FZ2-bQ-QJW"/>
-                    <constraint firstAttribute="bottom" secondItem="qBs-4i-Qlo" secondAttribute="bottom" constant="40" id="KLk-2R-yzK"/>
-                    <constraint firstItem="qBs-4i-Qlo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OX6-19-8Qe"/>
-                    <constraint firstItem="qkk-d5-jsx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SpC-av-m58"/>
-                    <constraint firstAttribute="trailing" secondItem="qkk-d5-jsx" secondAttribute="trailing" constant="253" id="VRJ-ME-EYp"/>
-                    <constraint firstAttribute="bottom" secondItem="3II-9d-axO" secondAttribute="bottom" constant="20" id="ZxD-Aj-k8t"/>
-                    <constraint firstItem="qkk-d5-jsx" firstAttribute="top" secondItem="Map-ME-xN1" secondAttribute="bottom" constant="8" id="ksQ-eN-lVc"/>
-                    <constraint firstItem="Map-ME-xN1" firstAttribute="top" secondItem="Z2S-L1-YkH" secondAttribute="bottom" constant="19" id="nF2-Gg-Dei"/>
-                    <constraint firstAttribute="trailing" secondItem="3II-9d-axO" secondAttribute="trailing" constant="20" id="scM-oa-1Xx"/>
-                    <constraint firstAttribute="trailing" secondItem="Map-ME-xN1" secondAttribute="trailing" constant="253" id="v34-DY-t5O"/>
+                    <constraint firstAttribute="trailing" secondItem="UVc-a2-Oa1" secondAttribute="trailing" constant="10" id="KYX-KA-ayB"/>
+                    <constraint firstItem="UVc-a2-Oa1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="YQv-R9-4u8"/>
+                    <constraint firstAttribute="bottom" secondItem="UVc-a2-Oa1" secondAttribute="bottom" constant="10" id="fZj-zb-ToP"/>
+                    <constraint firstItem="UVc-a2-Oa1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pwB-34-kly"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstItem="Z2S-L1-YkH" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="20" id="E3q-0Y-Apy"/>
-                <constraint firstItem="Z2S-L1-YkH" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="hQI-FF-Xs4"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Z2S-L1-YkH" secondAttribute="trailing" constant="20" id="zbG-Zi-4LK"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="itemDiscriptionLabel" destination="qkk-d5-jsx" id="vE4-yE-Lh7"/>

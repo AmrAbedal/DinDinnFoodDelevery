@@ -32,6 +32,10 @@
 		A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */; };
 		A0C84500252F8B9B008234F6 /* ItemUITablViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */; };
 		A0C84501252F8B9B008234F6 /* ItemUITablViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */; };
+		A0C84505252F9AF8008234F6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C84504252F9AF8008234F6 /* HeaderView.swift */; };
+		A0C84507252F9B08008234F6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C84506252F9B08008234F6 /* HeaderView.xib */; };
+		A0C8450B252FA0F8008234F6 /* CategoriesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */; };
+		A0C8450D252FA10D008234F6 /* CategoriesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */; };
 		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
 		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +95,10 @@
 		A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeDataSource.swift; sourceTree = "<group>"; };
 		A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUITablViewCell.swift; sourceTree = "<group>"; };
 		A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemUITablViewCell.xib; sourceTree = "<group>"; };
+		A0C84504252F9AF8008234F6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A0C84506252F9B08008234F6 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesHeaderView.xib; sourceTree = "<group>"; };
+		A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesHeaderView.swift; sourceTree = "<group>"; };
 		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
+				A0C84504252F9AF8008234F6 /* HeaderView.swift */,
+				A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */,
+				A0C84506252F9B08008234F6 /* HeaderView.xib */,
+				A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */,
 				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
 				A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */,
 				A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */,
@@ -414,6 +426,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */,
+				A0C8450B252FA0F8008234F6 /* CategoriesHeaderView.xib in Resources */,
+				A0C84507252F9B08008234F6 /* HeaderView.xib in Resources */,
 				A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */,
 				A0C84501252F8B9B008234F6 /* ItemUITablViewCell.xib in Resources */,
 				A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */,
@@ -550,10 +564,12 @@
 				A0342AD9252F7030008E7F47 /* HomeScreeanDataSource.swift in Sources */,
 				A0342AEB252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift in Sources */,
 				A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */,
+				A0C84505252F9AF8008234F6 /* HeaderView.swift in Sources */,
 				A0C84500252F8B9B008234F6 /* ItemUITablViewCell.swift in Sources */,
 				A0342AE2252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift in Sources */,
 				A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */,
 				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
+				A0C8450D252FA10D008234F6 /* CategoriesHeaderView.swift in Sources */,
 				A0342AE8252F7CA0008E7F47 /* HomeScreenData.swift in Sources */,
 				A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */,
 				A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */,

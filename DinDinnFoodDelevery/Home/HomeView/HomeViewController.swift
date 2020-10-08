@@ -9,10 +9,11 @@
 import UIKit
 import RxSwift
 import ImageSlideshow
+
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var tableViewTopSpaceConstrains: NSLayoutConstraint!
     @IBOutlet weak var itemsTablView: UITableView!
-    @IBOutlet weak var imageSlider: ImageSlideshow!
     private var items: [HomeScreenData] = []
     private let disposable = DisposeBag()
     private var presenter: HomeScreenPresenter
@@ -27,22 +28,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupImageSlider()
         setupTableView()
         setupSubscribers()
         presenter.fetchData()
         // Do any additional setup after loading the view.
     }
-    private func setupImageSlider() {
-        imageSlider.setImageInputs([
-            ImageSource(image: UIImage(named: "download")!),
-            ImageSource(image: UIImage(named: "download2")!),
-            ImageSource(image: UIImage(named: "download")!),
-            ImageSource(image: UIImage(named: "download2")!),
-        ])
-    }
+ 
     private func setupTableView() {
         itemsTablView.register(UINib.init(nibName:ItemUITablViewCell.identifier , bundle: nil), forCellReuseIdentifier: ItemUITablViewCell.identifier)
+        itemsTablView.register(UINib.init(nibName: HeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
+        itemsTablView.register(UINib.init(nibName: CategoriesHeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CategoriesHeaderView.identifier)
+        
         itemsTablView.rowHeight = 300
         itemsTablView.estimatedRowHeight = UITableView.automaticDimension
     }
@@ -66,15 +62,43 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as! HeaderView
+        headerView.cinfigure()
+            return headerView} else
+        { let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: CategoriesHeaderView.identifier) as! CategoriesHeaderView
+        return headerView
+             }
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return view.bounds.height * 0.7 } else {
+            return 100
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 0
+        }
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: ItemUITablViewCell.identifier) as! ItemUITablViewCell
         cell.configure(item: items[indexPath.row])
             return cell
         }
     }
-
+extension HomeViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView.contentOffset.y)
+   
+    }
+}

@@ -32,6 +32,6 @@ class DefaultHomeScreenInteractor: HomeScreenInteractor {
         }
     }
     private func getItemData(item: Item ) -> HomeScreenData {
-        return  HomeScreenData.init(name: item.name ?? "", price: item.price ?? 0, Image: "image")
+        return  HomeScreenData.init(name: item.name ?? "", price: item.price ?? 0, Image: "download")
     }
 }

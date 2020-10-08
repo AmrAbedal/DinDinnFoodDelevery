@@ -10,11 +10,17 @@ import UIKit
 
 class ItemUITablViewCell: UITableViewCell {
 static let identifier = "ItemUITablViewCell"
+    
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemPriceLabel: UIButton!
+    @IBOutlet weak var itemDiscriptionLabel: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     func configure(item: HomeScreenData ) {
-        
+        itemImageView.image = UIImage.init(named: item.Image)
+        itemPriceLabel.setTitle("\(item.price) USD", for: .normal)
     }
 }

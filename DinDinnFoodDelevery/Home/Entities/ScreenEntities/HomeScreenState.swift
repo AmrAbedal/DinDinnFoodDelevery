@@ -1,5 +1,5 @@
 //
-//  HomeScreenRouter.swift
+//  HomeScreenState.swift
 //  DinDinnFoodDelevery
 //
 //  Created by Amr AbdelWahab on 10/8/20.
@@ -8,9 +8,8 @@
 
 import Foundation
 
-protocol HomeScreenRouter {
-
-}
-class DefaultHomeScreenRouter: HomeScreenRouter {
-    
+enum HomeScreenState {
+    case loading
+    case success(HomeScreenData)
+    case failure(error:String)
 }

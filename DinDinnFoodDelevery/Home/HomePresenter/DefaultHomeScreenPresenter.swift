@@ -1,5 +1,5 @@
 //
-//  HomeScreenPresenter.swift
+//  DefaultHomeScreenPresenter.swift
 //  DinDinnFoodDelevery
 //
 //  Created by Amr AbdelWahab on 10/8/20.
@@ -8,20 +8,6 @@
 
 import Foundation
 import RxSwift
-
-struct HomeScreenData {
-    
-}
-enum HomeScreenState {
-    case loading
-    case success(HomeScreenData)
-    case failure(error:String)
-}
-
-protocol HomeScreenPresenter {
-    var interactor: HomeScreenInteractor {get set}
-    var dataSubject: BehaviorSubject<HomeScreenState> {get set}
-}
 
 class  DefaultHomeScreenPresenter: HomeScreenPresenter {
     private let disposable = DisposeBag()

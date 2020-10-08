@@ -22,6 +22,14 @@
 		A0342AD5252F6E23008E7F47 /* HomeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */; };
 		A0342AD7252F6E98008E7F47 /* MoyaHomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */; };
 		A0342AD9252F7030008E7F47 /* HomeScreeanDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */; };
+		A0342AE2252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */; };
+		A0342AE6252F7C86008E7F47 /* HomeScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */; };
+		A0342AE8252F7CA0008E7F47 /* HomeScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */; };
+		A0342AEB252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */; };
+		A0342AED252F7D28008E7F47 /* DefaultHomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */; };
+		A0342AEF252F7D55008E7F47 /* MockHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */; };
+		A0342AF1252F7D7D008E7F47 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AF0252F7D7D008E7F47 /* HomeData.swift */; };
+		A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */; };
 		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
 		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +79,14 @@
 		A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndPoint.swift; sourceTree = "<group>"; };
 		A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaHomeEndpoint.swift; sourceTree = "<group>"; };
 		A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreeanDataSource.swift; sourceTree = "<group>"; };
+		A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenPresenter.swift; sourceTree = "<group>"; };
+		A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenState.swift; sourceTree = "<group>"; };
+		A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenData.swift; sourceTree = "<group>"; };
+		A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenRouter.swift; sourceTree = "<group>"; };
+		A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeConfigurator.swift; sourceTree = "<group>"; };
+		A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeDataSource.swift; sourceTree = "<group>"; };
+		A0342AF0252F7D7D008E7F47 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeDataSource.swift; sourceTree = "<group>"; };
 		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,15 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				A0342A94252F5001008E7F47 /* AppDelegate.swift */,
-				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
-				A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */,
-				A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */,
-				A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */,
-				A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */,
-				A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */,
-				A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */,
-				A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */,
-				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
+				A0342AF4252F7DFE008E7F47 /* Home */,
 				A0342A9D252F5005008E7F47 /* Assets.xcassets */,
 				A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */,
 				A0342AA2252F5005008E7F47 /* Info.plist */,
@@ -171,6 +179,110 @@
 				A0342AB8252F5005008E7F47 /* Info.plist */,
 			);
 			path = DinDinnFoodDeleveryUITests;
+			sourceTree = "<group>";
+		};
+		A0342ADA252F7B28008E7F47 /* HomeRouter */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */,
+				A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */,
+			);
+			path = HomeRouter;
+			sourceTree = "<group>";
+		};
+		A0342ADB252F7B38008E7F47 /* HomePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */,
+				A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */,
+			);
+			path = HomePresenter;
+			sourceTree = "<group>";
+		};
+		A0342ADC252F7B58008E7F47 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ADD252F7B68008E7F47 /* Network */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		A0342ADD252F7B68008E7F47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */,
+				A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */,
+				A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */,
+				A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0342ADE252F7B97008E7F47 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
+				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A0342ADF252F7BA9008E7F47 /* HomeInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */,
+			);
+			path = HomeInteractor;
+			sourceTree = "<group>";
+		};
+		A0342AE0252F7BC7008E7F47 /* HomeConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */,
+				A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */,
+			);
+			path = HomeConfigurator;
+			sourceTree = "<group>";
+		};
+		A0342AE3252F7C63008E7F47 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AE9252F7CC8008E7F47 /* Json Entities */,
+				A0342AE4252F7C6E008E7F47 /* ScreenEntities */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A0342AE4252F7C6E008E7F47 /* ScreenEntities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */,
+				A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */,
+			);
+			path = ScreenEntities;
+			sourceTree = "<group>";
+		};
+		A0342AE9252F7CC8008E7F47 /* Json Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AF0252F7D7D008E7F47 /* HomeData.swift */,
+			);
+			path = "Json Entities";
+			sourceTree = "<group>";
+		};
+		A0342AF4252F7DFE008E7F47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */,
+				A0342AE3252F7C63008E7F47 /* Entities */,
+				A0342ADE252F7B97008E7F47 /* HomeView */,
+				A0342ADC252F7B58008E7F47 /* framework */,
+				A0342ADB252F7B38008E7F47 /* HomePresenter */,
+				A0342ADF252F7BA9008E7F47 /* HomeInteractor */,
+				A0342ADA252F7B28008E7F47 /* HomeRouter */,
+				A0342AE0252F7BC7008E7F47 /* HomeConfigurator */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		DAD095B5F7375A90061FFE46 /* Pods */ = {
@@ -426,13 +538,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0342ACD252F5EFB008E7F47 /* HomeConfigurator.swift in Sources */,
+				A0342AED252F7D28008E7F47 /* DefaultHomeConfigurator.swift in Sources */,
 				A0342AD7252F6E98008E7F47 /* MoyaHomeEndpoint.swift in Sources */,
 				A0342AD9252F7030008E7F47 /* HomeScreeanDataSource.swift in Sources */,
+				A0342AEB252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift in Sources */,
 				A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */,
+				A0342AE2252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift in Sources */,
+				A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */,
 				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
+				A0342AE8252F7CA0008E7F47 /* HomeScreenData.swift in Sources */,
 				A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */,
 				A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */,
+				A0342AE6252F7C86008E7F47 /* HomeScreenState.swift in Sources */,
+				A0342AF1252F7D7D008E7F47 /* HomeData.swift in Sources */,
 				A0342AD5252F6E23008E7F47 /* HomeEndPoint.swift in Sources */,
+				A0342AEF252F7D55008E7F47 /* MockHomeDataSource.swift in Sources */,
 				A0342AD3252F641D008E7F47 /* HomeScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

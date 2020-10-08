@@ -1,5 +1,5 @@
 //
-//  HomeConfigurator.swift
+//  DefaultHomeConfigurator.swift
 //  DinDinnFoodDelevery
 //
 //  Created by Amr AbdelWahab on 10/8/20.
@@ -7,10 +7,6 @@
 //
 
 import Foundation
-
-protocol HomeConfigurator {
-    static func configure(presenter:HomeScreenPresenter,router: HomeScreenRouter) -> HomeViewController
-}
 
 class DefaultHomeConfigurator: HomeConfigurator {
     static func configure(presenter: HomeScreenPresenter, router: HomeScreenRouter) -> HomeViewController {

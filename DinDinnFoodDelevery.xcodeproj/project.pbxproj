@@ -3,19 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		019A9BDF9B190DDDF6826D93 /* Pods_DinDinnFoodDeleveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757EBE7403D2FC782AC9EABE /* Pods_DinDinnFoodDeleveryTests.framework */; };
 		A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A94252F5001008E7F47 /* AppDelegate.swift */; };
-		A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A96252F5001008E7F47 /* SceneDelegate.swift */; };
-		A0342A99252F5001008E7F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A98252F5001008E7F47 /* ViewController.swift */; };
-		A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9A252F5001008E7F47 /* Main.storyboard */; };
 		A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9D252F5005008E7F47 /* Assets.xcassets */; };
 		A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */; };
 		A0342AAC252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */; };
 		A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */; };
+		A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0342AC8252F5933008E7F47 /* HomeViewController.xib */; };
+		A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AC9252F5933008E7F47 /* HomeViewController.swift */; };
 		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
 		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
@@ -47,9 +46,6 @@
 		9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinnFoodDelevery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342A94252F5001008E7F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0342A96252F5001008E7F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0342A98252F5001008E7F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0342A9B252F5001008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0342A9D252F5005008E7F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0342AA0252F5005008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0342AA2252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +55,8 @@
 		A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnFoodDeleveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnFoodDeleveryUITests.swift; sourceTree = "<group>"; };
 		A0342AB8252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0342AC8252F5933008E7F47 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A0342AC9252F5933008E7F47 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,9 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				A0342A94252F5001008E7F47 /* AppDelegate.swift */,
-				A0342A96252F5001008E7F47 /* SceneDelegate.swift */,
-				A0342A98252F5001008E7F47 /* ViewController.swift */,
-				A0342A9A252F5001008E7F47 /* Main.storyboard */,
+				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
+				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
 				A0342A9D252F5005008E7F47 /* Assets.xcassets */,
 				A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */,
 				A0342AA2252F5005008E7F47 /* Info.plist */,
@@ -165,7 +162,6 @@
 				9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */,
 				D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,7 +276,7 @@
 			files = (
 				A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */,
 				A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */,
-				A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */,
+				A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +404,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0342A99252F5001008E7F47 /* ViewController.swift in Sources */,
 				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
-				A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */,
+				A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A0342A9A252F5001008E7F47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0342A9B252F5001008E7F47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -515,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

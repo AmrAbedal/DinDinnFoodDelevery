@@ -33,13 +33,12 @@ class HomeViewController: UIViewController {
         presenter.fetchData()
         // Do any additional setup after loading the view.
     }
- 
+    
     private func setupTableView() {
         itemsTablView.register(UINib.init(nibName:ItemUITablViewCell.identifier , bundle: nil), forCellReuseIdentifier: ItemUITablViewCell.identifier)
-        itemsTablView.register(UINib.init(nibName: HeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
+        itemsTablView.register(UINib.init(nibName:HeaderView.identifier , bundle: nil), forCellReuseIdentifier: HeaderView.identifier)
         itemsTablView.register(UINib.init(nibName: CategoriesHeaderView.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CategoriesHeaderView.identifier)
-        
-        itemsTablView.rowHeight = 300
+        itemsTablView.rowHeight = 400
         itemsTablView.estimatedRowHeight = UITableView.automaticDimension
     }
     private func setupSubscribers() {
@@ -68,37 +67,40 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as! HeaderView
-        headerView.cinfigure()
-            return headerView} else
-        { let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: CategoriesHeaderView.identifier) as! CategoriesHeaderView
-        return headerView
-             }
+            return nil
+        } else {
+            let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: CategoriesHeaderView.identifier) as! CategoriesHeaderView
+            return headerView
+        }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return view.bounds.height * 0.7 } else {
+            return 0 } else {
             return 100
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 0
+            return 1
         }
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: ItemUITablViewCell.identifier) as! ItemUITablViewCell
-        cell.configure(item: items[indexPath.row])
-            return cell
-        }
+        if indexPath.section == 0 {
+            let headerView = tableView.dequeueReusableCell(withIdentifier: HeaderView.identifier) as! HeaderView
+            headerView.cinfigure()
+            return headerView} else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ItemUITablViewCell.identifier) as! ItemUITablViewCell
+            cell.configure(item: items[indexPath.row])
+            return cell}
     }
+    
+}
 extension HomeViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(scrollView.contentOffset.y)
-   
+        (itemsTablView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as? HeaderView)?.bottomConstrains.constant = 0.8 * scrollView.contentOffset.y
     }
 }

@@ -15,10 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-aw-Lat" customClass="AnimatableView" customModule="IBAnimatable">
-                    <rect key="frame" x="0.0" y="3.5" width="329" height="87.5"/>
+                    <rect key="frame" x="0.0" y="44" width="329" height="47"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xhx-Fi-Kpv">
-                            <rect key="frame" x="35" y="30" width="259.5" height="27.5"/>
+                            <rect key="frame" x="35" y="10" width="259.5" height="27.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soI-Zj-J6U">
                                     <rect key="frame" x="0.0" y="0.0" width="53" height="27.5"/>
@@ -49,7 +49,6 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="Xhx-Fi-Kpv" firstAttribute="top" secondItem="sBt-aw-Lat" secondAttribute="top" constant="30" id="Kfq-vP-0yf"/>
                         <constraint firstItem="Xhx-Fi-Kpv" firstAttribute="centerY" secondItem="sBt-aw-Lat" secondAttribute="centerY" id="Mhr-JL-qCJ"/>
                         <constraint firstItem="Xhx-Fi-Kpv" firstAttribute="centerX" secondItem="sBt-aw-Lat" secondAttribute="centerX" id="qxS-s1-rIf"/>
                     </constraints>
@@ -66,6 +65,7 @@
                 <constraint firstItem="sBt-aw-Lat" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="58N-dv-Idm"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sBt-aw-Lat" secondAttribute="trailing" id="V7y-zQ-RfF"/>
                 <constraint firstItem="sBt-aw-Lat" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="10" id="bg2-yV-bWv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="sBt-aw-Lat" secondAttribute="top" id="van-05-2BE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

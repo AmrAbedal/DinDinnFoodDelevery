@@ -3,19 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		019A9BDF9B190DDDF6826D93 /* Pods_DinDinnFoodDeleveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757EBE7403D2FC782AC9EABE /* Pods_DinDinnFoodDeleveryTests.framework */; };
 		A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A94252F5001008E7F47 /* AppDelegate.swift */; };
-		A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A96252F5001008E7F47 /* SceneDelegate.swift */; };
-		A0342A99252F5001008E7F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A98252F5001008E7F47 /* ViewController.swift */; };
-		A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9A252F5001008E7F47 /* Main.storyboard */; };
 		A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9D252F5005008E7F47 /* Assets.xcassets */; };
 		A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */; };
 		A0342AAC252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */; };
 		A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */; };
+		A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0342AC8252F5933008E7F47 /* HomeViewController.xib */; };
+		A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AC9252F5933008E7F47 /* HomeViewController.swift */; };
+		A0342ACD252F5EFB008E7F47 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */; };
+		A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */; };
+		A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */; };
+		A0342AD3252F641D008E7F47 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */; };
+		A0342AD5252F6E23008E7F47 /* HomeEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */; };
+		A0342AD7252F6E98008E7F47 /* MoyaHomeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */; };
+		A0342AD9252F7030008E7F47 /* HomeScreeanDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */; };
+		A0342AE2252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */; };
+		A0342AE6252F7C86008E7F47 /* HomeScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */; };
+		A0342AE8252F7CA0008E7F47 /* HomeScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */; };
+		A0342AEB252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */; };
+		A0342AED252F7D28008E7F47 /* DefaultHomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */; };
+		A0342AEF252F7D55008E7F47 /* MockHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */; };
+		A0342AF1252F7D7D008E7F47 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AF0252F7D7D008E7F47 /* HomeData.swift */; };
+		A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */; };
+		A0C84500252F8B9B008234F6 /* ItemUITablViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */; };
+		A0C84501252F8B9B008234F6 /* ItemUITablViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */; };
+		A0C84505252F9AF8008234F6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C84504252F9AF8008234F6 /* HeaderView.swift */; };
+		A0C84507252F9B08008234F6 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C84506252F9B08008234F6 /* HeaderView.xib */; };
+		A0C8450B252FA0F8008234F6 /* CategoriesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */; };
+		A0C8450D252FA10D008234F6 /* CategoriesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */; };
 		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
 		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
@@ -47,9 +67,6 @@
 		9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinnFoodDelevery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342A94252F5001008E7F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0342A96252F5001008E7F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0342A98252F5001008E7F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0342A9B252F5001008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0342A9D252F5005008E7F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0342AA0252F5005008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0342AA2252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +76,29 @@
 		A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnFoodDeleveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnFoodDeleveryUITests.swift; sourceTree = "<group>"; };
 		A0342AB8252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0342AC8252F5933008E7F47 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A0342AC9252F5933008E7F47 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndPoint.swift; sourceTree = "<group>"; };
+		A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaHomeEndpoint.swift; sourceTree = "<group>"; };
+		A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreeanDataSource.swift; sourceTree = "<group>"; };
+		A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenPresenter.swift; sourceTree = "<group>"; };
+		A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenState.swift; sourceTree = "<group>"; };
+		A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenData.swift; sourceTree = "<group>"; };
+		A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeScreenRouter.swift; sourceTree = "<group>"; };
+		A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeConfigurator.swift; sourceTree = "<group>"; };
+		A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeDataSource.swift; sourceTree = "<group>"; };
+		A0342AF0252F7D7D008E7F47 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeDataSource.swift; sourceTree = "<group>"; };
+		A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUITablViewCell.swift; sourceTree = "<group>"; };
+		A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemUITablViewCell.xib; sourceTree = "<group>"; };
+		A0C84504252F9AF8008234F6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A0C84506252F9B08008234F6 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesHeaderView.xib; sourceTree = "<group>"; };
+		A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesHeaderView.swift; sourceTree = "<group>"; };
 		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,9 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A0342A94252F5001008E7F47 /* AppDelegate.swift */,
-				A0342A96252F5001008E7F47 /* SceneDelegate.swift */,
-				A0342A98252F5001008E7F47 /* ViewController.swift */,
-				A0342A9A252F5001008E7F47 /* Main.storyboard */,
+				A0342AF4252F7DFE008E7F47 /* Home */,
 				A0342A9D252F5005008E7F47 /* Assets.xcassets */,
 				A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */,
 				A0342AA2252F5005008E7F47 /* Info.plist */,
@@ -155,6 +193,116 @@
 			path = DinDinnFoodDeleveryUITests;
 			sourceTree = "<group>";
 		};
+		A0342ADA252F7B28008E7F47 /* HomeRouter */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */,
+				A0342AEA252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift */,
+			);
+			path = HomeRouter;
+			sourceTree = "<group>";
+		};
+		A0342ADB252F7B38008E7F47 /* HomePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */,
+				A0342AE1252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift */,
+			);
+			path = HomePresenter;
+			sourceTree = "<group>";
+		};
+		A0342ADC252F7B58008E7F47 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ADD252F7B68008E7F47 /* Network */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		A0342ADD252F7B68008E7F47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD6252F6E98008E7F47 /* MoyaHomeEndpoint.swift */,
+				A0342AD8252F7030008E7F47 /* HomeScreeanDataSource.swift */,
+				A0342AEE252F7D55008E7F47 /* MockHomeDataSource.swift */,
+				A0342AF2252F7DA5008E7F47 /* DefaultHomeDataSource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0342ADE252F7B97008E7F47 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
+				A0C84504252F9AF8008234F6 /* HeaderView.swift */,
+				A0C8450A252FA0F8008234F6 /* CategoriesHeaderView.xib */,
+				A0C84506252F9B08008234F6 /* HeaderView.xib */,
+				A0C8450C252FA10D008234F6 /* CategoriesHeaderView.swift */,
+				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
+				A0C844FE252F8B9B008234F6 /* ItemUITablViewCell.swift */,
+				A0C844FF252F8B9B008234F6 /* ItemUITablViewCell.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A0342ADF252F7BA9008E7F47 /* HomeInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */,
+			);
+			path = HomeInteractor;
+			sourceTree = "<group>";
+		};
+		A0342AE0252F7BC7008E7F47 /* HomeConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */,
+				A0342AEC252F7D28008E7F47 /* DefaultHomeConfigurator.swift */,
+			);
+			path = HomeConfigurator;
+			sourceTree = "<group>";
+		};
+		A0342AE3252F7C63008E7F47 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AE9252F7CC8008E7F47 /* Json Entities */,
+				A0342AE4252F7C6E008E7F47 /* ScreenEntities */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A0342AE4252F7C6E008E7F47 /* ScreenEntities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AE5252F7C86008E7F47 /* HomeScreenState.swift */,
+				A0342AE7252F7CA0008E7F47 /* HomeScreenData.swift */,
+			);
+			path = ScreenEntities;
+			sourceTree = "<group>";
+		};
+		A0342AE9252F7CC8008E7F47 /* Json Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AF0252F7D7D008E7F47 /* HomeData.swift */,
+			);
+			path = "Json Entities";
+			sourceTree = "<group>";
+		};
+		A0342AF4252F7DFE008E7F47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AD4252F6E23008E7F47 /* HomeEndPoint.swift */,
+				A0342AE3252F7C63008E7F47 /* Entities */,
+				A0342ADE252F7B97008E7F47 /* HomeView */,
+				A0342ADC252F7B58008E7F47 /* framework */,
+				A0342ADB252F7B38008E7F47 /* HomePresenter */,
+				A0342ADF252F7BA9008E7F47 /* HomeInteractor */,
+				A0342ADA252F7B28008E7F47 /* HomeRouter */,
+				A0342AE0252F7BC7008E7F47 /* HomeConfigurator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		DAD095B5F7375A90061FFE46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +313,6 @@
 				9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */,
 				D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,8 +426,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */,
+				A0C8450B252FA0F8008234F6 /* CategoriesHeaderView.xib in Resources */,
+				A0C84507252F9B08008234F6 /* HeaderView.xib in Resources */,
 				A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */,
-				A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */,
+				A0C84501252F8B9B008234F6 /* ItemUITablViewCell.xib in Resources */,
+				A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +558,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0342A99252F5001008E7F47 /* ViewController.swift in Sources */,
+				A0342ACD252F5EFB008E7F47 /* HomeConfigurator.swift in Sources */,
+				A0342AED252F7D28008E7F47 /* DefaultHomeConfigurator.swift in Sources */,
+				A0342AD7252F6E98008E7F47 /* MoyaHomeEndpoint.swift in Sources */,
+				A0342AD9252F7030008E7F47 /* HomeScreeanDataSource.swift in Sources */,
+				A0342AEB252F7D0C008E7F47 /* DefaultHomeScreenRouter.swift in Sources */,
+				A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */,
+				A0C84505252F9AF8008234F6 /* HeaderView.swift in Sources */,
+				A0C84500252F8B9B008234F6 /* ItemUITablViewCell.swift in Sources */,
+				A0342AE2252F7C29008E7F47 /* DefaultHomeScreenPresenter.swift in Sources */,
+				A0342AF3252F7DA5008E7F47 /* DefaultHomeDataSource.swift in Sources */,
 				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
-				A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */,
+				A0C8450D252FA10D008234F6 /* CategoriesHeaderView.swift in Sources */,
+				A0342AE8252F7CA0008E7F47 /* HomeScreenData.swift in Sources */,
+				A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */,
+				A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */,
+				A0342AE6252F7C86008E7F47 /* HomeScreenState.swift in Sources */,
+				A0342AF1252F7D7D008E7F47 /* HomeData.swift in Sources */,
+				A0342AD5252F6E23008E7F47 /* HomeEndPoint.swift in Sources */,
+				A0342AEF252F7D55008E7F47 /* MockHomeDataSource.swift in Sources */,
+				A0342AD3252F641D008E7F47 /* HomeScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,14 +613,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A0342A9A252F5001008E7F47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0342A9B252F5001008E7F47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -515,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -28,16 +28,74 @@
                         <outlet property="delegate" destination="-1" id="lta-oJ-78e"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hN-kt-Jee" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="314" y="782" width="80" height="80"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9ww-K7-j0Q">
+                            <rect key="frame" x="28.5" y="31.5" width="23" height="18.5"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avd-Re-l0a" customClass="AnimatableLabel" customModule="IBAnimatable">
+                            <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.054901960780000002" green="0.7725490196" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Dwg-Do-ncc"/>
+                                <constraint firstAttribute="width" secondItem="Avd-Re-l0a" secondAttribute="height" multiplier="1:1" id="GZ0-0g-yrd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                    <color key="value" red="0.054901960780000002" green="0.7725490196" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Avd-Re-l0a" firstAttribute="top" secondItem="9hN-kt-Jee" secondAttribute="top" id="1Ig-Tz-e10"/>
+                        <constraint firstItem="Avd-Re-l0a" firstAttribute="trailing" secondItem="9hN-kt-Jee" secondAttribute="trailing" id="H0s-Gp-9jO"/>
+                        <constraint firstItem="9ww-K7-j0Q" firstAttribute="centerY" secondItem="9hN-kt-Jee" secondAttribute="centerY" id="PKh-de-vAx"/>
+                        <constraint firstItem="9ww-K7-j0Q" firstAttribute="centerX" secondItem="9hN-kt-Jee" secondAttribute="centerX" id="Q1B-T9-XIF"/>
+                        <constraint firstAttribute="width" secondItem="9hN-kt-Jee" secondAttribute="height" multiplier="1:1" id="Qcg-Jp-dgi"/>
+                        <constraint firstAttribute="width" constant="80" id="XHm-dl-agw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                            <point key="value" x="0.0" y="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="0.02"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.20784313730000001" green="0.58823529409999997" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="JhG-H5-RNo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1ml-gR-rpq"/>
                 <constraint firstItem="JhG-H5-RNo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BPF-r1-5EM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JhG-H5-RNo" secondAttribute="trailing" id="dd9-lC-zPe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9hN-kt-Jee" secondAttribute="bottom" id="gaU-Mk-qBQ"/>
                 <constraint firstAttribute="bottom" secondItem="JhG-H5-RNo" secondAttribute="bottom" id="kqI-0h-AIi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9hN-kt-Jee" secondAttribute="trailing" constant="20" id="mST-LE-mcr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="109"/>
         </view>
     </objects>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+    </resources>
 </document>

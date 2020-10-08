@@ -7,24 +7,32 @@
 //
 
 import UIKit
-
+import RxSwift
 class HomeViewController: UIViewController {
+    private let disposable = DisposeBag()
+    private var presenter: HomeScreenPresenter
+    init(presenter: HomeScreenPresenter) {
+        self.presenter = presenter
+        super.init(nibName: "HomeViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupSubscribers()
         // Do any additional setup after loading the view.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    private func setupSubscribers() {
+        presenter.dataSubject.subscribe({[weak self] event in
+            if let element = event.element {
+                self?.handleScreenState(state: element)
+            }
+            }).disposed(by: disposable)
+    }
+    private func handleScreenState(state: HomeScreenState) {
+        
+    }
 }

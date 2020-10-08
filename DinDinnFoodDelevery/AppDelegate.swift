@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     private func setRootViewController() {
         let window = UIWindow.init(frame: UIScreen.main.bounds)
-        let homeViewController = UINavigationController.init(rootViewController: HomeViewController.init(nibName: "HomeViewController", bundle: nil))
+        let homeViewController = DefaultHomeConfigurator.configure( presenter: DefaultHomeScreenPresenter.init(interactor: DefaultHomeScreenInteractor()), router: DefaultHomeScreenRouter())
         window.rootViewController = homeViewController
         self.window = window
         

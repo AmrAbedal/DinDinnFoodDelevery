@@ -15,6 +15,10 @@
 		A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */; };
 		A0342ACA252F5933008E7F47 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0342AC8252F5933008E7F47 /* HomeViewController.xib */; };
 		A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AC9252F5933008E7F47 /* HomeViewController.swift */; };
+		A0342ACD252F5EFB008E7F47 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */; };
+		A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */; };
+		A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */; };
+		A0342AD3252F641D008E7F47 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */; };
 		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
 		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +61,10 @@
 		A0342AB8252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0342AC8252F5933008E7F47 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A0342AC9252F5933008E7F47 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
 		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +134,10 @@
 			children = (
 				A0342A94252F5001008E7F47 /* AppDelegate.swift */,
 				A0342AC9252F5933008E7F47 /* HomeViewController.swift */,
+				A0342ACE252F5F61008E7F47 /* HomeScreenPresenter.swift */,
+				A0342AD2252F641D008E7F47 /* HomeScreenInteractor.swift */,
+				A0342AD0252F5F94008E7F47 /* HomeScreenRouter.swift */,
+				A0342ACC252F5EFB008E7F47 /* HomeConfigurator.swift */,
 				A0342AC8252F5933008E7F47 /* HomeViewController.xib */,
 				A0342A9D252F5005008E7F47 /* Assets.xcassets */,
 				A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */,
@@ -404,8 +416,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0342ACD252F5EFB008E7F47 /* HomeConfigurator.swift in Sources */,
+				A0342ACF252F5F61008E7F47 /* HomeScreenPresenter.swift in Sources */,
 				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
+				A0342AD1252F5F94008E7F47 /* HomeScreenRouter.swift in Sources */,
 				A0342ACB252F5933008E7F47 /* HomeViewController.swift in Sources */,
+				A0342AD3252F641D008E7F47 /* HomeScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

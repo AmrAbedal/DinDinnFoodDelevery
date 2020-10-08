@@ -8,6 +8,8 @@ target 'DinDinnFoodDelevery' do
   # Pods for DinDinnFoodDelevery
   pod 'ObjectMapper','4.2.0'
   pod 'Moya/RxSwift'
+  pod 'ImageSlideshow', '~> 1.9.0'
+
   target 'DinDinnFoodDeleveryTests' do
     inherit! :search_paths
     # Pods for testing

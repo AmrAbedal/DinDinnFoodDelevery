@@ -18,7 +18,11 @@ protocol HomeScreenInteractor {
 }
 
 class DefaultHomeScreenInteractor: HomeScreenInteractor {
+    let dataSource: HomeScreeanDataSource
+    init(dataSource: HomeScreeanDataSource) {
+        self.dataSource = dataSource
+    }
     func fetchData() -> Single<HomeScreenInteractorDataModel> {
-        return Single.just(HomeScreenInteractorDataModel(name: "Amr"))
+    return Single.just(HomeScreenInteractorDataModel(name: "Amr"))
     }
 }

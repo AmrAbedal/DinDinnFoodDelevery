@@ -92,8 +92,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             headerView.cinfigure()
             return headerView} else {
             let cell = tableView.dequeueReusableCell(withIdentifier: ItemUITablViewCell.identifier) as! ItemUITablViewCell
-            cell.configure(item: items[indexPath.row])
+            cell.configure(item: items[indexPath.row], action: {[weak self] in
+                guard let self = self else { return }
+                self.addItemToCart(item: self.items[indexPath.row] )
+            })
             return cell}
+    }
+    private func addItemToCart(item:HomeScreenData ) {
+        
     }
     
 }

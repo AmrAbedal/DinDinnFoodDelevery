@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019A9BDF9B190DDDF6826D93 /* Pods_DinDinnFoodDeleveryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757EBE7403D2FC782AC9EABE /* Pods_DinDinnFoodDeleveryTests.framework */; };
 		A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A94252F5001008E7F47 /* AppDelegate.swift */; };
 		A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A96252F5001008E7F47 /* SceneDelegate.swift */; };
 		A0342A99252F5001008E7F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A98252F5001008E7F47 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */; };
 		A0342AAC252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */; };
 		A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */; };
+		DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */; };
+		F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0659EC92760AF5BB18115560 /* Pods-DinDinnFoodDelevery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDelevery.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDelevery/Pods-DinDinnFoodDelevery.debug.xcconfig"; sourceTree = "<group>"; };
+		1948F34B0C7245C9E2A1E229 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		757EBE7403D2FC782AC9EABE /* Pods_DinDinnFoodDeleveryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDeleveryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88B63DBFB43CEA3DE8971A12 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92B949CD13E67F8A6688CE8C /* Pods-DinDinnFoodDelevery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDelevery.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDelevery/Pods-DinDinnFoodDelevery.release.xcconfig"; sourceTree = "<group>"; };
+		9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinnFoodDelevery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342A94252F5001008E7F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0342A96252F5001008E7F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnFoodDeleveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnFoodDeleveryUITests.swift; sourceTree = "<group>"; };
 		A0342AB8252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDinnFoodDeleveryTests.release.xcconfig"; path = "Target Support Files/Pods-DinDinnFoodDeleveryTests/Pods-DinDinnFoodDeleveryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25478184355C81AF7BE7D38 /* Pods_DinDinnFoodDelevery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019A9BDF9B190DDDF6826D93 /* Pods_DinDinnFoodDeleveryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAC6F9DE1BD0B78F7005958 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034478632C4E15B239C6FE1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58C90A968FA8C4D2E2756C91 /* Pods_DinDinnFoodDelevery.framework */,
+				A1915DF93A8F66C925D93E03 /* Pods_DinDinnFoodDelevery_DinDinnFoodDeleveryUITests.framework */,
+				757EBE7403D2FC782AC9EABE /* Pods_DinDinnFoodDeleveryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0342A88252F5001008E7F47 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				A0342AAA252F5005008E7F47 /* DinDinnFoodDeleveryTests */,
 				A0342AB5252F5005008E7F47 /* DinDinnFoodDeleveryUITests */,
 				A0342A92252F5001008E7F47 /* Products */,
+				DAD095B5F7375A90061FFE46 /* Pods */,
+				034478632C4E15B239C6FE1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = DinDinnFoodDeleveryUITests;
 			sourceTree = "<group>";
 		};
+		DAD095B5F7375A90061FFE46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0659EC92760AF5BB18115560 /* Pods-DinDinnFoodDelevery.debug.xcconfig */,
+				92B949CD13E67F8A6688CE8C /* Pods-DinDinnFoodDelevery.release.xcconfig */,
+				88B63DBFB43CEA3DE8971A12 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.debug.xcconfig */,
+				1948F34B0C7245C9E2A1E229 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.release.xcconfig */,
+				9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */,
+				D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0342ABB252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDelevery" */;
 			buildPhases = (
+				DE61B6AEE88B1EEB5417D4A1 /* [CP] Check Pods Manifest.lock */,
 				A0342A8D252F5001008E7F47 /* Sources */,
 				A0342A8E252F5001008E7F47 /* Frameworks */,
 				A0342A8F252F5001008E7F47 /* Resources */,
+				9905C0A8FF8D0753E32EBAF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0342ABE252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryTests" */;
 			buildPhases = (
+				9BEFD045F5A52B8CE2CE5EC4 /* [CP] Check Pods Manifest.lock */,
 				A0342AA3252F5005008E7F47 /* Sources */,
 				A0342AA4252F5005008E7F47 /* Frameworks */,
 				A0342AA5252F5005008E7F47 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0342AC1252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryUITests" */;
 			buildPhases = (
+				062A2B8365D16AE9A857F085 /* [CP] Check Pods Manifest.lock */,
 				A0342AAE252F5005008E7F47 /* Sources */,
 				A0342AAF252F5005008E7F47 /* Frameworks */,
 				A0342AB0252F5005008E7F47 /* Resources */,
+				71182B57FC1D8C7058653992 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		062A2B8365D16AE9A857F085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71182B57FC1D8C7058653992 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests/Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9905C0A8FF8D0753E32EBAF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery/Pods-DinDinnFoodDelevery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery/Pods-DinDinnFoodDelevery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DinDinnFoodDelevery/Pods-DinDinnFoodDelevery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEFD045F5A52B8CE2CE5EC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinnFoodDeleveryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE61B6AEE88B1EEB5417D4A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DinDinnFoodDelevery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0342A8D252F5001008E7F47 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		A0342ABC252F5005008E7F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0659EC92760AF5BB18115560 /* Pods-DinDinnFoodDelevery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +599,7 @@
 		};
 		A0342ABD252F5005008E7F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B949CD13E67F8A6688CE8C /* Pods-DinDinnFoodDelevery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +617,7 @@
 		};
 		A0342ABF252F5005008E7F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9552B8246D10F8BDF7B4029D /* Pods-DinDinnFoodDeleveryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +639,7 @@
 		};
 		A0342AC0252F5005008E7F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31589638FA3C6358D914E79 /* Pods-DinDinnFoodDeleveryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +661,7 @@
 		};
 		A0342AC2252F5005008E7F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B63DBFB43CEA3DE8971A12 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +681,7 @@
 		};
 		A0342AC3252F5005008E7F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1948F34B0C7245C9E2A1E229 /* Pods-DinDinnFoodDelevery-DinDinnFoodDeleveryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

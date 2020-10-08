@@ -9,21 +9,21 @@
 import Foundation
 import RxSwift
 
-class  DefaultHomeScreenPresenter: HomeScreenPresenter {
+class DefaultHomeScreenPresenter: HomeScreenPresenter {
+    
     private let disposable = DisposeBag()
     internal var interactor: HomeScreenInteractor
-    var dataSubject: BehaviorSubject<HomeScreenState> = BehaviorSubject<HomeScreenState>(value: .loading)
+    var dataSubject: BehaviorSubject<HomeScreenState?> = BehaviorSubject<HomeScreenState?>(value: nil)
     
     init(interactor:HomeScreenInteractor ) {
         self.interactor = interactor
     }
     func fetchData() {
+        dataSubject.onNext(.loading)
         interactor.fetchData().subscribe(onSuccess: { result in
-            self.dataSubject.onNext(.success(HomeScreenData.init()))
+            self.dataSubject.onNext(result)
         }, onError: {error in
             self.dataSubject.onNext(.failure(error: error.localizedDescription))
         }).disposed(by: disposable)
     }
-    
-    
 }

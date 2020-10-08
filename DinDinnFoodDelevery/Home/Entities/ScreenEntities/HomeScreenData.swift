@@ -8,8 +8,9 @@
 
 import Foundation
 
-
 struct HomeScreenData {
-    
+    let name: String
+    let price: Int
+    let Image: String
 }
 

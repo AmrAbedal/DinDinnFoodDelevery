@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 class HomeViewController: UIViewController {
+    private var items: [HomeScreenData] = []
     private let disposable = DisposeBag()
     private var presenter: HomeScreenPresenter
     init(presenter: HomeScreenPresenter) {
@@ -23,16 +24,24 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubscribers()
+        presenter.fetchData()
         // Do any additional setup after loading the view.
     }
     private func setupSubscribers() {
         presenter.dataSubject.subscribe({[weak self] event in
-            if let element = event.element {
-                self?.handleScreenState(state: element)
+            if let element = event.element, let data = element {
+                self?.handleScreenState(state: data)
             }
             }).disposed(by: disposable)
     }
     private func handleScreenState(state: HomeScreenState) {
-        
+        switch state {
+        case .loading: break
+        case .success(let data): handleData(items: data)
+        case .failure(_): break
+        }
+    }
+    private func handleData(items: [HomeScreenData]) {
+        self.items = items
     }
 }

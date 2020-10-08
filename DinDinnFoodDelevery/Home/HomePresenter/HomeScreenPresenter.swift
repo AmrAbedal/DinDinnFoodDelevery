@@ -11,7 +11,8 @@ import RxSwift
 
 protocol HomeScreenPresenter {
     var interactor: HomeScreenInteractor {get set}
-    var dataSubject: BehaviorSubject<HomeScreenState> {get set}
+    var dataSubject: BehaviorSubject<HomeScreenState?> {get set}
+    func fetchData() 
 }
 
 

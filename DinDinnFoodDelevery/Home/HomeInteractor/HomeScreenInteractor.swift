@@ -9,12 +9,9 @@
 import Foundation
 import RxSwift
 
-struct HomeScreenInteractorDataModel {
-    let name: String
-}
 
 protocol HomeScreenInteractor {
-    func fetchData() -> Single<HomeScreenInteractorDataModel>
+    func fetchData() -> Single<HomeScreenState>
 }
 
 class DefaultHomeScreenInteractor: HomeScreenInteractor {
@@ -22,7 +19,19 @@ class DefaultHomeScreenInteractor: HomeScreenInteractor {
     init(dataSource: HomeScreeanDataSource) {
         self.dataSource = dataSource
     }
-    func fetchData() -> Single<HomeScreenInteractorDataModel> {
-    return Single.just(HomeScreenInteractorDataModel(name: "Amr"))
+    func fetchData() -> Single<HomeScreenState> {
+        return dataSource.FetchHomeData().map({
+            self.get(data: $0)
+        })
+    }
+    private func get(data: HomeData) -> HomeScreenState {
+        if data.status?.code == 200 , let items = data.items {
+            return .success(items.map({getItemData(item: $0)}))
+        } else {
+            return .failure(error: "")
+        }
+    }
+    private func getItemData(item: Item ) -> HomeScreenData {
+        return  HomeScreenData.init(name: item.name ?? "", price: item.price ?? 0, Image: "image")
     }
 }

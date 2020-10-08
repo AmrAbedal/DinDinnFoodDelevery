@@ -10,6 +10,6 @@ import Foundation
 
 enum HomeScreenState {
     case loading
-    case success(HomeScreenData)
+    case success([HomeScreenData])
     case failure(error:String)
 }

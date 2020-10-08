@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A94252F5001008E7F47 /* AppDelegate.swift */; };
+		A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A96252F5001008E7F47 /* SceneDelegate.swift */; };
+		A0342A99252F5001008E7F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342A98252F5001008E7F47 /* ViewController.swift */; };
+		A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9A252F5001008E7F47 /* Main.storyboard */; };
+		A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9D252F5005008E7F47 /* Assets.xcassets */; };
+		A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */; };
+		A0342AAC252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */; };
+		A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0342AA8252F5005008E7F47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0342A89252F5001008E7F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0342A90252F5001008E7F47;
+			remoteInfo = DinDinnFoodDelevery;
+		};
+		A0342AB3252F5005008E7F47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0342A89252F5001008E7F47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0342A90252F5001008E7F47;
+			remoteInfo = DinDinnFoodDelevery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDinnFoodDelevery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0342A94252F5001008E7F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0342A96252F5001008E7F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0342A98252F5001008E7F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0342A9B252F5001008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0342A9D252F5005008E7F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0342AA0252F5005008E7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0342AA2252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0342AA7252F5005008E7F47 /* DinDinnFoodDeleveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnFoodDeleveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnFoodDeleveryTests.swift; sourceTree = "<group>"; };
+		A0342AAD252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinDinnFoodDeleveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinDinnFoodDeleveryUITests.swift; sourceTree = "<group>"; };
+		A0342AB8252F5005008E7F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0342A8E252F5001008E7F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AA4252F5005008E7F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AAF252F5005008E7F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0342A88252F5001008E7F47 = {
+			isa = PBXGroup;
+			children = (
+				A0342A93252F5001008E7F47 /* DinDinnFoodDelevery */,
+				A0342AAA252F5005008E7F47 /* DinDinnFoodDeleveryTests */,
+				A0342AB5252F5005008E7F47 /* DinDinnFoodDeleveryUITests */,
+				A0342A92252F5001008E7F47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0342A92252F5001008E7F47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */,
+				A0342AA7252F5005008E7F47 /* DinDinnFoodDeleveryTests.xctest */,
+				A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0342A93252F5001008E7F47 /* DinDinnFoodDelevery */ = {
+			isa = PBXGroup;
+			children = (
+				A0342A94252F5001008E7F47 /* AppDelegate.swift */,
+				A0342A96252F5001008E7F47 /* SceneDelegate.swift */,
+				A0342A98252F5001008E7F47 /* ViewController.swift */,
+				A0342A9A252F5001008E7F47 /* Main.storyboard */,
+				A0342A9D252F5005008E7F47 /* Assets.xcassets */,
+				A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */,
+				A0342AA2252F5005008E7F47 /* Info.plist */,
+			);
+			path = DinDinnFoodDelevery;
+			sourceTree = "<group>";
+		};
+		A0342AAA252F5005008E7F47 /* DinDinnFoodDeleveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AAB252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift */,
+				A0342AAD252F5005008E7F47 /* Info.plist */,
+			);
+			path = DinDinnFoodDeleveryTests;
+			sourceTree = "<group>";
+		};
+		A0342AB5252F5005008E7F47 /* DinDinnFoodDeleveryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0342AB6252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift */,
+				A0342AB8252F5005008E7F47 /* Info.plist */,
+			);
+			path = DinDinnFoodDeleveryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0342A90252F5001008E7F47 /* DinDinnFoodDelevery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0342ABB252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDelevery" */;
+			buildPhases = (
+				A0342A8D252F5001008E7F47 /* Sources */,
+				A0342A8E252F5001008E7F47 /* Frameworks */,
+				A0342A8F252F5001008E7F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinDinnFoodDelevery;
+			productName = DinDinnFoodDelevery;
+			productReference = A0342A91252F5001008E7F47 /* DinDinnFoodDelevery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0342AA6252F5005008E7F47 /* DinDinnFoodDeleveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0342ABE252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryTests" */;
+			buildPhases = (
+				A0342AA3252F5005008E7F47 /* Sources */,
+				A0342AA4252F5005008E7F47 /* Frameworks */,
+				A0342AA5252F5005008E7F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0342AA9252F5005008E7F47 /* PBXTargetDependency */,
+			);
+			name = DinDinnFoodDeleveryTests;
+			productName = DinDinnFoodDeleveryTests;
+			productReference = A0342AA7252F5005008E7F47 /* DinDinnFoodDeleveryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0342AB1252F5005008E7F47 /* DinDinnFoodDeleveryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0342AC1252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryUITests" */;
+			buildPhases = (
+				A0342AAE252F5005008E7F47 /* Sources */,
+				A0342AAF252F5005008E7F47 /* Frameworks */,
+				A0342AB0252F5005008E7F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0342AB4252F5005008E7F47 /* PBXTargetDependency */,
+			);
+			name = DinDinnFoodDeleveryUITests;
+			productName = DinDinnFoodDeleveryUITests;
+			productReference = A0342AB2252F5005008E7F47 /* DinDinnFoodDeleveryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0342A89252F5001008E7F47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Orcas;
+				TargetAttributes = {
+					A0342A90252F5001008E7F47 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A0342AA6252F5005008E7F47 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A0342A90252F5001008E7F47;
+					};
+					A0342AB1252F5005008E7F47 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = A0342A90252F5001008E7F47;
+					};
+				};
+			};
+			buildConfigurationList = A0342A8C252F5001008E7F47 /* Build configuration list for PBXProject "DinDinnFoodDelevery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0342A88252F5001008E7F47;
+			productRefGroup = A0342A92252F5001008E7F47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0342A90252F5001008E7F47 /* DinDinnFoodDelevery */,
+				A0342AA6252F5005008E7F47 /* DinDinnFoodDeleveryTests */,
+				A0342AB1252F5005008E7F47 /* DinDinnFoodDeleveryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0342A8F252F5001008E7F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0342AA1252F5005008E7F47 /* LaunchScreen.storyboard in Resources */,
+				A0342A9E252F5005008E7F47 /* Assets.xcassets in Resources */,
+				A0342A9C252F5001008E7F47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AA5252F5005008E7F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AB0252F5005008E7F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0342A8D252F5001008E7F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0342A99252F5001008E7F47 /* ViewController.swift in Sources */,
+				A0342A95252F5001008E7F47 /* AppDelegate.swift in Sources */,
+				A0342A97252F5001008E7F47 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AA3252F5005008E7F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0342AAC252F5005008E7F47 /* DinDinnFoodDeleveryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0342AAE252F5005008E7F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0342AB7252F5005008E7F47 /* DinDinnFoodDeleveryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0342AA9252F5005008E7F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0342A90252F5001008E7F47 /* DinDinnFoodDelevery */;
+			targetProxy = A0342AA8252F5005008E7F47 /* PBXContainerItemProxy */;
+		};
+		A0342AB4252F5005008E7F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0342A90252F5001008E7F47 /* DinDinnFoodDelevery */;
+			targetProxy = A0342AB3252F5005008E7F47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0342A9A252F5001008E7F47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0342A9B252F5001008E7F47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0342A9F252F5005008E7F47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0342AA0252F5005008E7F47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0342AB9252F5005008E7F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0342ABA252F5005008E7F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0342ABC252F5005008E7F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDelevery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDelevery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0342ABD252F5005008E7F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDelevery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDelevery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0342ABF252F5005008E7F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDeleveryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDeleveryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinDinnFoodDelevery.app/DinDinnFoodDelevery";
+			};
+			name = Debug;
+		};
+		A0342AC0252F5005008E7F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDeleveryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDeleveryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinDinnFoodDelevery.app/DinDinnFoodDelevery";
+			};
+			name = Release;
+		};
+		A0342AC2252F5005008E7F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDeleveryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDeleveryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinDinnFoodDelevery;
+			};
+			name = Debug;
+		};
+		A0342AC3252F5005008E7F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DinDinnFoodDeleveryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Orcas.OrcasUserApp.DinDinnFoodDelevery.DinDinnFoodDeleveryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinDinnFoodDelevery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0342A8C252F5001008E7F47 /* Build configuration list for PBXProject "DinDinnFoodDelevery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0342AB9252F5005008E7F47 /* Debug */,
+				A0342ABA252F5005008E7F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0342ABB252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDelevery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0342ABC252F5005008E7F47 /* Debug */,
+				A0342ABD252F5005008E7F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0342ABE252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0342ABF252F5005008E7F47 /* Debug */,
+				A0342AC0252F5005008E7F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0342AC1252F5005008E7F47 /* Build configuration list for PBXNativeTarget "DinDinnFoodDeleveryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0342AC2252F5005008E7F47 /* Debug */,
+				A0342AC3252F5005008E7F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0342A89252F5001008E7F47 /* Project object */;
+}
